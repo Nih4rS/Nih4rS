@@ -19,7 +19,7 @@ I love working with **LLMs, NLP, and AI-driven automation**, constantly experime
 
 ✅ **Applied Machine Learning Certification** – UT Dallas  
 ✅ **AWS Certified Cloud Practitioner (CLF-C02)**  
-✅ **Knowledge Graphs for RAG** - deeplearning.ai
+✅ **Knowledge Graphs for RAG**, LLMOps - deeplearning.ai
 
 ---
 
