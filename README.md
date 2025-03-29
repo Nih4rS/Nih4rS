@@ -51,6 +51,7 @@ Intrests: Chess, Piano, hiking
 
 Always eager to explore **new AI-driven projects, research breakthroughs, and collaborations** in **ML, NLP, and Generative AI**.  
 Feel free to **connect** and let's **push boundaries together!** 🚀  
+Portfolio URL: https://nih4rs.github.io/Nih4rS
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/nihar-shiva-kumar/)  
 [![GitHub](https://img.shields.io/badge/-GitHub-black?style=flat&logo=github)](https://github.com/Nih4rS)  
