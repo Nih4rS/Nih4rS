@@ -77,11 +77,32 @@
 </head>
 <body>
   <nav>
-    <a href="#about">ABOUT ME</a>
+    <a href="#" onclick="loadSection('About')">ABOUT</a>
+    <a href="#" onclick="loadSection('Education')">EDUCATION</a>
+    <a href="#" onclick="loadSection('Experience')">EXPERIENCE</a>
     <a href="#projects">PROJECTS</a>
     <a href="#skills">SKILLS</a>
+    <a href="#recommendations">RECOMMENDATIONS</a>
+    <a href="#contact">CONTACT</a>
   </nav>
 
+  <div class="container">
+    <div id="main-content">
+      <!-- Dynamic content will be loaded here -->
+      <h1>👋 Welcome to My Portfolio</h1>
+      <p>Click on the tabs above to explore more.</p>
+    </div>
+  </div>
+
+  <div class="section" id="contact">
+    <h2>📬 Contact Me</h2>
+    <p>If you'd like to collaborate, ask a question, or just say hi — please fill out the form below!</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSexampleID/viewform" target="_blank">
+      <button>Open Contact Form</button>
+    </a>
+  </div>
+  
+  
   <div class="container">
     <header id="about">
       <h1>👋 Hi, I'm Nihar Shiva Kumar!</h1>
