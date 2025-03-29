@@ -4,7 +4,7 @@
 
 I’m passionate about **Machine Learning, Data Science, and Generative AI**—exploring how AI can solve **real-world challenges** and unlock **new possibilities**.  
 I love working with **LLMs, NLP, and AI-driven automation**, constantly experimenting with the latest advancements in **AI and cloud computing**.  
-
+Intrests: Chess, Piano, hiking
 ---
 
 ## 👨‍🎓 About Me 💡  
