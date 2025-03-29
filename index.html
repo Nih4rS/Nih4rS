@@ -2,27 +2,112 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Nihar Shiva Kumar's Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nihar Shiva Kumar | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      color: #333;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 50px;
+    }
+    header, section {
+      margin-bottom: 50px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: #fff;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    nav a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #000;
+    }
+    h1, h2 {
+      text-align: center;
+      font-weight: normal;
+    }
+    .project-grid {
+      display: flex;
+      gap: 40px;
+      justify-content: space-between;
+    }
+    .project {
+      width: 45%;
+      padding: 20px;
+      border: 1px solid #e0e0e0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .project img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 15px;
+      border: 1px solid #333;
+      color: #333;
+      text-decoration: none;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    a.button:hover {
+      background-color: #333;
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>👋 Hi, I'm Nihar Shiva Kumar!</h1>
-    <p>Machine Learning Engineer | Data Scientist | AI Enthusiast</p>
-  </header>
+  <nav>
+    <a href="#about">ABOUT ME</a>
+    <a href="#projects">PROJECTS</a>
+    <a href="#skills">SKILLS</a>
+  </nav>
 
-  <section>
-    <h2>🚀 Projects</h2>
-    <ul>
-      <li><a href="projects/project1.html">Project 1</a></li>
-      <li><a href="projects/project2.html">Project 2</a></li>
-    </ul>
-  </section>
+  <div class="container">
+    <header id="about">
+      <h1>👋 Hi, I'm Nihar Shiva Kumar!</h1>
+      <p>Machine Learning Engineer | Data Scientist | AI Enthusiast</p>
+      <p>I'm passionate about ML, NLP, AI-driven automation, and Cloud Computing. Certified in AWS, NLP, and advanced Data Analytics.</p>
+    </header>
 
-  <footer>
-    <p>Connect with me on <a href="https://github.com/Nih4rS">GitHub</a></p>
-  </footer>
+    <section id="projects">
+      <h2>PROJECTS</h2>
+      <div class="project-grid">
+        <div class="project">
+          <img src="assets/images/project1.png" alt="Project 1">
+          <h3>ML-Powered Ticket Triage</h3>
+          <p>A robust system leveraging LLMs and NLP for automated customer support ticket categorization.</p>
+          <a class="button" href="projects/project1.html">VIEW PROJECT</a>
+        </div>
+        <div class="project">
+          <img src="assets/images/project2.png" alt="Project 2">
+          <h3>Financial Analytics Dashboard</h3>
+          <p>An interactive Power BI dashboard designed for dynamic financial analytics and real-time insights.</p>
+          <a class="button" href="projects/project2.html">VIEW PROJECT</a>
+        </div>
+      </div>
+    </section>
 
-  <script src="script.js"></script>
+    <section id="skills">
+      <h2>SKILLS</h2>
+      <p>Python | NLP | LLMs | TensorFlow | AWS | Power BI | Data Analytics | Cloud Computing</p>
+    </section>
+  </div>
 </body>
 </html>
