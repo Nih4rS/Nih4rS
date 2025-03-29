@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nihar Shiva Kumar | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <style>
     body {
       font-family: 'Roboto', sans-serif;
@@ -82,8 +83,7 @@
   <div class="container">
     <header id="about">
       <h1>👋 Hi, I'm Nihar Shiva Kumar!</h1>
-      <p>Machine Learning Engineer | Data Scientist | AI Enthusiast</p>
-      <p>I'm passionate about ML, NLP, AI-driven automation, and Cloud Computing. Certified in AWS, NLP, and advanced Data Analytics.</p>
+      <div id="readme-content"></div>
     </header>
 
     <section id="projects">
@@ -109,5 +109,14 @@
       <p>Python | NLP | LLMs | TensorFlow | AWS | Power BI | Data Analytics | Cloud Computing</p>
     </section>
   </div>
+
+  <script>
+    fetch('README.md')
+      .then(response => response.text())
+      .then(text => {
+        document.getElementById('readme-content').innerHTML = marked.parse(text);
+      })
+      .catch(err => console.log(err));
+  </script>
 </body>
 </html>
