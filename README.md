@@ -45,7 +45,7 @@ Intrests: Chess, Piano, hiking
 ✔️ **Certifications** – AWS, Azure, Alteryx, Applied Machine Learning (UTD)  
 ✔️ **Other Tools** – MS Office, Seeq, OSI Pi, MATLAB  
 
-https://nih4rs.github.io/Nih4rS
+
 ---
 
 ## 🌍 **Let's Connect & Collaborate!**  
@@ -56,3 +56,4 @@ Feel free to **connect** and let's **push boundaries together!** 🚀
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/nihar-shiva-kumar/)  
 [![GitHub](https://img.shields.io/badge/-GitHub-black?style=flat&logo=github)](https://github.com/Nih4rS)  
+https://nih4rs.github.io/Nih4rS
