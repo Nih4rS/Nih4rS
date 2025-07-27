@@ -1,137 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nihar Shiva Kumar | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <script src="script.js"></script>
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      color: #333;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background-color: #fff;
-    }
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 50px;
-    }
-    header, section {
-      margin-bottom: 50px;
-    }
-    nav {
-      display: flex;
-      justify-content: space-around;
-      background-color: #fff;
-      padding: 20px 0;
-      position: sticky;
-      top: 0;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    nav a {
-      text-decoration: none;
-      font-weight: bold;
-      color: #000;
-    }
-    h1, h2 {
-      text-align: center;
-      font-weight: normal;
-    }
-    .project-grid {
-      display: flex;
-      gap: 40px;
-      justify-content: space-between;
-    }
-    .project {
-      width: 45%;
-      padding: 20px;
-      border: 1px solid #e0e0e0;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    .project img {
-      width: 100%;
-      height: auto;
-      margin-bottom: 15px;
-    }
-    a.button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 15px;
-      border: 1px solid #333;
-      color: #333;
-      text-decoration: none;
-      transition: background-color 0.3s, color 0.3s;
-    }
-    a.button:hover {
-      background-color: #333;
-      color: #fff;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Nihar Shiva Kumar - Data Scientist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <style>
+        :root {
+            --primary-color: #2b2d42;
+            --secondary-color: #8d99ae;
+            --accent-color: #ef233c;
+            --background-color: #f8f9fa;
+            --text-color: #1d1e2c;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text-color);
+            background: var(--background-color);
+            line-height: 1.6;
+            padding: 0;
+        }
+        header {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: auto;
+        }
+        section {
+            padding: 2rem 1.5rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h2 {
+            border-left: 5px solid var(--accent-color);
+            padding-left: 10px;
+            margin-bottom: 1.5rem;
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .card {
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+        .skills i { margin-right: 5px; }
+        .project-img {
+            height: 200px;
+            background: #ccc;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: gray;
+        }
+        .project-stats {
+            font-weight: 600;
+            color: var(--accent-color);
+            margin-top: 10px;
+        }
+        .timeline ul {
+            list-style-type: none;
+            position: relative;
+        }
+        .timeline ul::before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--secondary-color);
+        }
+        .timeline li {
+            margin-bottom: 30px;
+            padding-left: 40px;
+            position: relative;
+        }
+        .timeline li::before {
+            content: '';
+            position: absolute;
+            left: 9px;
+            top: 6px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--accent-color);
+        }
+        footer {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        @media(max-width:600px){
+            header h1 { font-size: 2rem; }
+        }
+    </style>
 </head>
-
 <body>
-  <nav>
-    <a href="#" onclick="loadSection('About')">ABOUT</a>
-    <a href="#" onclick="loadSection('Education')">EDUCATION</a>
-    <a href="#" onclick="loadSection('Experience')">EXPERIENCE</a>
-    <a href="#projects">PROJECTS</a>
-    <a href="#skills">SKILLS</a>
-    <a href="#recommendations">RECOMMENDATIONS</a>
-    <a href="#contact">CONTACT</a>
-  </nav>
-
-  <div class="container center">
-    <div id="main-content">
-      <!-- Dynamic content will be loaded here -->
-      <h1>👋 Welcome to My Portfolio</h1>
-      <p>Click on the tabs above to explore more.</p>
-    </div>
-  
-  <div class="container center">
-    <header id="about">
-      <div id="readme-content"></div>
-    </header>
-
-    <section id="skills">
-      <h2>SKILLS</h2>
-      <p>Python | NLP | LLMs | TensorFlow | AWS | Power BI | Data Analytics | Cloud Computing</p>
-    </section>
-  </div>
-  
-  <div class="section" id="contact">
-    <h2>📬 Contact Me</h2>
-    <p>If you'd like to collaborate, ask a question, or just say hi — please fill out the form below!</p>
-    <a href="https://forms.gle/oxYytmaTAQ66U9tP9" target="_blank">
-      <button class="contact-btn">Open Contact Form</button>
-    </a>
-  </div>
-  
-  <!-- <div class="section" id="recommendations">
-    <h2>💬 Recommendations</h2>
-    <p>"Nihar's analytical skills and attention to detail were instrumental in our project success." - Former Manager</p>
-    <p>"A true team player with a knack for problem-solving." - Colleague</p>
-  </div>-->
-
-</div>
-  <footer>
-    <p>Contact: <a href="mailto:shivakumarnihar@gmail.com">shivakumarnihar@gmail.com</a> </p>
-    <p>Location: Plano, Texas, United States</p>
-  </footer>
-
-  <script>
-    fetch('README.md')
-      .then(response => response.text())
-      .then(text => {
-        document.getElementById('readme-content').innerHTML = marked.parse(text);
-      })
-      .catch(err => console.log(err));
-  </script>
+    <!-- Content to be continued -->
 </body>
 </html>
