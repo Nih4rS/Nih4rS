@@ -21,6 +21,19 @@
             line-height: 1.6;
             padding: 0;
         }
+        nav {
+            background: var(--secondary-color);
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 1rem;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
         header {
             background: var(--primary-color);
             color: white;
@@ -57,7 +70,6 @@
             padding: 1.5rem;
             border-radius: 8px;
         }
-        .skills i { margin-right: 5px; }
         .project-img {
             height: 200px;
             background: #ccc;
@@ -73,34 +85,6 @@
             font-weight: 600;
             color: var(--accent-color);
             margin-top: 10px;
-        }
-        .timeline ul {
-            list-style-type: none;
-            position: relative;
-        }
-        .timeline ul::before {
-            content: '';
-            position: absolute;
-            left: 15px;
-            top: 0;
-            bottom: 0;
-            width: 2px;
-            background: var(--secondary-color);
-        }
-        .timeline li {
-            margin-bottom: 30px;
-            padding-left: 40px;
-            position: relative;
-        }
-        .timeline li::before {
-            content: '';
-            position: absolute;
-            left: 9px;
-            top: 6px;
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: var(--accent-color);
         }
         footer {
             background: var(--primary-color);
@@ -119,6 +103,79 @@
     </style>
 </head>
 <body>
-    <!-- Content to be continued -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <header>
+        <h1>Nihar Shiva Kumar</h1>
+        <p>Data Scientist | ML Engineer | Cloud Architect</p>
+        <p><a href="mailto:shivakumarnihar@gmail.com">shivakumarnihar@gmail.com</a> | <a href="https://www.linkedin.com/in/nihar-shiva-kumar">LinkedIn</a> | <a href="https://github.com/Nih4rS">GitHub</a></p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hands-on Data Scientist with deep expertise in LLMs, Generative AI, NLP, and full-stack ML systems. Passionate about building scalable, impactful solutions using open-source and cloud-native tools.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Languages: Python, R, C++, SQL, NoSQL</li>
+            <li>Frameworks: PyTorch, TensorFlow, Scikit-Learn, Spark</li>
+            <li>Cloud: AWS (Lambda, S3), Azure (VectorDB), GCP</li>
+            <li>Visualization: Power BI, Tableau, Jupyter</li>
+            <li>DevOps: GitHub, Docker, Kubernetes</li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p><strong>UT Dallas</strong>, MS in Business Analytics (2024), GPA: 3.87</p>
+        <p><strong>BMSCE, Bengaluru</strong>, BTech in EEE (2019), GPA: 8.62</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="card-grid">
+            <div class="card">
+                <div class="project-img">Transformer Models</div>
+                <p>Fine-tuned Hugging Face models (DistilBERT, FLAN-T5) with PEFT & QLoRA for sentiment classification</p>
+            </div>
+            <div class="card">
+                <div class="project-img">Trading LSTM</div>
+                <p>Built real-time swing trading pipelines with LSTM & technical indicators—5% alpha over baseline</p>
+            </div>
+            <div class="card">
+                <div class="project-img">Power BI Supply Chain</div>
+                <p>Created dashboard to visualize $36M+ in sales & delays using global supply chain data</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li><strong>CrowdDoing (2024–2025)</strong>: Web scraping & LDA for 100K+ reviews, Power BI dashboards, churn ↓10%</li>
+            <li><strong>Viatris (2024)</strong>: ETL & HDBSCAN clustering on 500K reports, Azure VectorDB, NLP summarization</li>
+            <li><strong>Microchip (2021–2022)</strong>: MATLAB analysis, Altium PCB migration, root cause fixes for 90% RMA defects</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:shivakumarnihar@gmail.com">shivakumarnihar@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/nihar-shiva-kumar">/nihar-shiva-kumar</a></p>
+        <p>GitHub: <a href="https://github.com/Nih4rS">/Nih4rS</a></p>
+    </section>
+
+    <footer>
+        <p>© 2025 Nihar Shiva Kumar. All rights reserved.</p>
+    </footer>
 </body>
 </html>
