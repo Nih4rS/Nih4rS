@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Nihar Shiva Kumar - Data Scientist</title>
+    <title>Nihar Shiva Kumar - Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <style>
         :root {
@@ -19,7 +19,6 @@
             color: var(--text-color);
             background: var(--background-color);
             line-height: 1.6;
-            padding: 0;
         }
         nav {
             background: var(--secondary-color);
@@ -34,6 +33,9 @@
             font-weight: bold;
             text-decoration: none;
         }
+        nav a:hover {
+            text-decoration: underline;
+        }
         header {
             background: var(--primary-color);
             color: white;
@@ -42,7 +44,6 @@
         }
         header h1 {
             font-size: 2.5rem;
-            margin-bottom: 0.5rem;
         }
         header p {
             font-size: 1.1rem;
@@ -50,41 +51,14 @@
             margin: auto;
         }
         section {
-            padding: 2rem 1.5rem;
+            padding: 2rem;
             max-width: 1000px;
             margin: auto;
         }
         h2 {
             border-left: 5px solid var(--accent-color);
             padding-left: 10px;
-            margin-bottom: 1.5rem;
-        }
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-        }
-        .card {
-            background: #fff;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            padding: 1.5rem;
-            border-radius: 8px;
-        }
-        .project-img {
-            height: 200px;
-            background: #ccc;
-            border-radius: 5px;
             margin-bottom: 1rem;
-            background-size: cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: gray;
-        }
-        .project-stats {
-            font-weight: 600;
-            color: var(--accent-color);
-            margin-top: 10px;
         }
         footer {
             background: var(--primary-color);
@@ -97,81 +71,78 @@
             color: var(--accent-color);
             text-decoration: none;
         }
-        @media(max-width:600px){
-            header h1 { font-size: 2rem; }
-        }
     </style>
 </head>
 <body>
     <nav>
         <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#recommendations">Recommendations</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <header>
         <h1>Nihar Shiva Kumar</h1>
-        <p>Data Scientist | ML Engineer | Cloud Architect</p>
-        <p><a href="mailto:shivakumarnihar@gmail.com">shivakumarnihar@gmail.com</a> | <a href="https://www.linkedin.com/in/nihar-shiva-kumar">LinkedIn</a> | <a href="https://github.com/Nih4rS">GitHub</a></p>
+        <p>ML Engineer | Data Scientist | Generative AI & NLP Specialist | Cloud-AI Architect</p>
+        <p><a href="mailto:shivakumarnihar@gmail.com">shivakumarnihar@gmail.com</a> | <a href="https://www.linkedin.com/in/nihar-shiva-kumar" target="_blank">LinkedIn</a> | <a href="https://github.com/Nih4rS" target="_blank">GitHub</a></p>
     </header>
 
     <section id="about">
-        <h2>About Me</h2>
-        <p>Hands-on Data Scientist with deep expertise in LLMs, Generative AI, NLP, and full-stack ML systems. Passionate about building scalable, impactful solutions using open-source and cloud-native tools.</p>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Languages: Python, R, C++, SQL, NoSQL</li>
-            <li>Frameworks: PyTorch, TensorFlow, Scikit-Learn, Spark</li>
-            <li>Cloud: AWS (Lambda, S3), Azure (VectorDB), GCP</li>
-            <li>Visualization: Power BI, Tableau, Jupyter</li>
-            <li>DevOps: GitHub, Docker, Kubernetes</li>
-        </ul>
-    </section>
-
-    <section id="education">
-        <h2>Education</h2>
-        <p><strong>UT Dallas</strong>, MS in Business Analytics (2024), GPA: 3.87</p>
-        <p><strong>BMSCE, Bengaluru</strong>, BTech in EEE (2019), GPA: 8.62</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="card-grid">
-            <div class="card">
-                <div class="project-img">Transformer Models</div>
-                <p>Fine-tuned Hugging Face models (DistilBERT, FLAN-T5) with PEFT & QLoRA for sentiment classification</p>
-            </div>
-            <div class="card">
-                <div class="project-img">Trading LSTM</div>
-                <p>Built real-time swing trading pipelines with LSTM & technical indicators—5% alpha over baseline</p>
-            </div>
-            <div class="card">
-                <div class="project-img">Power BI Supply Chain</div>
-                <p>Created dashboard to visualize $36M+ in sales & delays using global supply chain data</p>
-            </div>
-        </div>
+        <h2>🔥 Hey there, I'm Nihar Shiva Kumar!</h2>
+        <p>🚀 Passionate about AI, Machine Learning, and Generative AI — I apply advanced techniques to real-world challenges. With a background in Electrical Engineering and Data Science, I build LLMs, NLP systems, and scalable cloud pipelines for impactful applications. Interests: Chess ♟️, Piano 🎹, Hiking 🥾.</p>
     </section>
 
     <section id="experience">
         <h2>Experience</h2>
         <ul>
-            <li><strong>CrowdDoing (2024–2025)</strong>: Web scraping & LDA for 100K+ reviews, Power BI dashboards, churn ↓10%</li>
-            <li><strong>Viatris (2024)</strong>: ETL & HDBSCAN clustering on 500K reports, Azure VectorDB, NLP summarization</li>
-            <li><strong>Microchip (2021–2022)</strong>: MATLAB analysis, Altium PCB migration, root cause fixes for 90% RMA defects</li>
+            <li><strong>Data Scientist, CrowdDoing</strong> (2024–2025): Web scraping, NLP, sentiment analysis, Power BI dashboards. +25% faster decisions, +15% revenue impact.</li>
+            <li><strong>Data Analyst Intern (MLOps), Viatris</strong> (2024): Built NLP pipelines, clustering (HDBSCAN), Azure VectorDB, time-series (LSTM), Power BI reporting.</li>
+            <li><strong>Engineer Intern, Microchip</strong> (2021–2022): MATLAB analysis on SiC modules, RMA root cause resolution (90%), Altium migration, and PCB automation projects.</li>
         </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <p><strong>ML & AI</strong>: XGBoost, SVM, LSTM, Transformers, CNNs, kNN, HDBSCAN</p>
+        <p><strong>Generative AI & LLMs</strong>: GPT-4, FLAN-T5, DistilBERT, Mixtral, Gemma, RAG, LangChain</p>
+        <p><strong>Big Data</strong>: Spark, Hadoop, Hive, Scala</p>
+        <p><strong>Cloud</strong>: AWS (SageMaker, Lambda, Redshift), GCP, Azure (AAS, VectorDB)</p>
+        <p><strong>Data Tools</strong>: Python, SQL, Power BI, Tableau, Jupyter, Alteryx, MATLAB</p>
+        <p><strong>Certifications</strong>: AWS Certified Cloud Practitioner, UTD Applied Machine Learning, DeepLearning.ai LLMOps</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>🎯 <strong>Tweet Emotion Detection</strong> – LSTM with Hugging Face; high F1-macro.</li>
+            <li>📊 <strong>Credit Risk Prediction</strong> – XGBoost on Amex data, 93.5% F1.</li>
+            <li>💡 <strong>Smart Energy (AWS)</strong> – EV charging optimizer using serverless stack.</li>
+            <li>🧠 <strong>LLM Fine-tuning</strong> – DistilBERT, Gemma, FLAN-T5 with LoRA, QLoRA, IA3.</li>
+            <li>📈 <strong>Airbnb Pricing Optimization</strong> – XGBoost + SHAP for price drivers.</li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p><strong>MS – Business Analytics</strong>, UT Dallas (2024) | GPA: 3.87</p>
+        <p><strong>MTech – Power Electronics & Drives</strong>, Manipal Institute of Technology (2021)</p>
+        <p><strong>BTech – Electrical & Electronics</strong>, BMS College of Engineering (2019)</p>
+        <p><em>Finalist: UTA Data Competition, Adobe Analytics Challenge, Alteryx Datathon</em></p>
+    </section>
+
+    <section id="recommendations">
+        <h2>Recommendations</h2>
+        <p>Visit my <a href="https://www.linkedin.com/in/nihar-shiva-kumar/recommendations" target="_blank">LinkedIn recommendations</a> to see what mentors, peers, and collaborators say about working with me.</p>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:shivakumarnihar@gmail.com">shivakumarnihar@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/nihar-shiva-kumar">/nihar-shiva-kumar</a></p>
-        <p>GitHub: <a href="https://github.com/Nih4rS">/Nih4rS</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/nihar-shiva-kumar" target="_blank">linkedin.com/in/nihar-shiva-kumar</a></p>
+        <p>GitHub: <a href="https://github.com/Nih4rS" target="_blank">github.com/Nih4rS</a></p>
     </section>
 
     <footer>
