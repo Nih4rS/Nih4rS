@@ -3,47 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Education - Nihar Shiva Kumar</title>
+  <title>Education — Nihar Shiva Kumar</title>
   <style>
-    body { font-family: Arial, sans-serif; padding: 2rem; background-color: #f4f4f4; color: #333; line-height: 1.6; }
-    h1, h2 { color: #2b2d42; }
-    .school { margin-bottom: 2rem; background: #fff; padding: 1rem; border-left: 5px solid #ef233c; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    .degree { font-weight: bold; font-size: 1.1rem; color: #2b2d42; }
-    .details { font-size: 0.95rem; color: #444; }
-    ul { margin-top: 0.5rem; }
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;background:#f4f6fb;color:#23262f;margin:0}
+    main{max-width:960px;margin:auto;padding:2rem 1.25rem}
+    h1{color:#2b2d42}
+    .school{background:#fff;border:1px solid #e8eaf0;border-left:5px solid #e63946;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,.05);padding:1rem;margin:1rem 0}
+    .degree{font-weight:700}
+    .meta{font-size:.95rem;color:#576072}
+    ul{margin-top:.5rem;margin-left:1rem}
   </style>
 </head>
 <body>
-  <h1>Education</h1>
+  <main>
+    <h1>Education</h1>
 
-  <div class="school">
-    <div class="degree">Master of Science, Business Analytics (Data Science Track)</div>
-    <div class="details">The University of Texas at Dallas · Aug 2022 – May 2024 · GPA: 3.873/4</div>
-    <ul>
-      <li>Active member: Data Science Club, Chess Club</li>
-      <li>Finalist: Alteryx Datathon (Disney), UTA Data Analysis Competition, Adobe Analytics Challenge (GM)</li>
-      <li><strong>Projects:</strong> Tweet Emotion Detection (LSTM), NLP Model Optimization (FLAN-T5, DistilBERT), Algorithmic Trading, Credit Risk ML, Smart Energy (AWS), Airbnb Pricing</li>
-      <li><strong>Certifications:</strong> Applied ML Certificate (UTD)</li>
-    </ul>
-  </div>
+    <article class="school">
+      <div class="degree">M.S., Business Analytics (Data Science Track) — The University of Texas at Dallas</div>
+      <div class="meta">Aug 2022 – May 2024 · GPA 3.873/4.00</div>
+      <ul>
+        <li>Activities: Data Science Club, Chess Club, volunteering.</li>
+        <li>Competitions: Alteryx Datathon (Disney), UTA Data Analysis finalist, Adobe Analytics Challenge with GM.</li>
+        <li>Selected work: Tweet Emotion Detection (LSTM, HF Trainer), Transformer fine-tuning (DistilBERT, FLAN-T5, Mistral, Gemma via LoRA/QLoRA/IA3, tracked in W&B), Algorithmic Trading ETL + LSTM, Credit Risk (XGBoost and NN), AWS smart-energy architecture, Airbnb pricing with XGBoost.</li>
+      </ul>
+    </article>
 
-  <div class="school">
-    <div class="degree">Master of Technology, Power Electronics and Drives</div>
-    <div class="details">Manipal Institute of Technology · 2019 – 2021 · GPA: 8.88/10</div>
-    <ul>
-      <li>Projects: Neural network fuzzy control for converters (MATLAB), MPPT with 8051, ARM-based buck-boost, advanced motor control</li>
-      <li>Deep Learning project initiated data science transition</li>
-    </ul>
-  </div>
+    <article class="school">
+      <div class="degree">M.Tech., Power Electronics & Drives — Manipal Institute of Technology</div>
+      <div class="meta">2019 – 2021 · GPA 8.88/10</div>
+      <ul>
+        <li>NN-fuzzy control for converters (MATLAB); 8051 solar MPPT; ARM-based buck-boost control.</li>
+        <li>Advanced motor-drive controls: scalar/vector for synchronous motors; DTC for AC drives with MATLAB validation.</li>
+      </ul>
+    </article>
 
-  <div class="school">
-    <div class="degree">Bachelor of Engineering, Electrical and Electronics Engineering</div>
-    <div class="details">BMS College of Engineering · 2015 – 2019 · GPA: 8.62/10</div>
-    <ul>
-      <li>Ranked 3rd: ABB Make-a-thon, E-Yantra Robotics Semifinalist</li>
-      <li>Led ML workshops & treasure hunts (PhaseShift)</li>
-      <li><strong>Projects:</strong> 3D Object Scanner (MATLAB), Speaker Recognition, Home Automation, Quadratic Buck Converter</li>
-    </ul>
-  </div>
+    <article class="school">
+      <div class="degree">B.E., Electrical & Electronics — BMS College of Engineering</div>
+      <div class="meta">2015 – 2019</div>
+      <ul>
+        <li>Awards: ABB Make-a-thon rank 3; e-Yantra Robotics semifinalist.</li>
+        <li>Projects: 3D object scanner (MATLAB), speaker recognition, home automation, quadratic buck converter.</li>
+      </ul>
+    </article>
+  </main>
 </body>
 </html>
