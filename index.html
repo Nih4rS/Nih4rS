@@ -1,153 +1,374 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Nihar Shiva Kumar - Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-    <style>
-        :root {
-            --primary-color: #2b2d42;
-            --secondary-color: #8d99ae;
-            --accent-color: #ef233c;
-            --background-color: #f8f9fa;
-            --text-color: #1d1e2c;
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: var(--text-color);
-            background: var(--background-color);
-            line-height: 1.6;
-        }
-        nav {
-            background: var(--secondary-color);
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            padding: 1rem;
-            flex-wrap: wrap;
-        }
-        nav a {
-            color: white;
-            font-weight: bold;
-            text-decoration: none;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        header {
-            background: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 2rem 1rem;
-        }
-        header h1 {
-            font-size: 2.5rem;
-        }
-        header p {
-            font-size: 1.1rem;
-            max-width: 700px;
-            margin: auto;
-        }
-        section {
-            padding: 2rem;
-            max-width: 1000px;
-            margin: auto;
-        }
-        h2 {
-            border-left: 5px solid var(--accent-color);
-            padding-left: 10px;
-            margin-bottom: 1rem;
-        }
-        footer {
-            background: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            font-size: 0.9rem;
-        }
-        a {
-            color: var(--accent-color);
-            text-decoration: none;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nihar Shiva Kumar &middot; Data Scientist & ML Engineer</title>
+    <meta name="description" content="Portfolio for Nihar Shiva Kumar, Data Scientist and ML Engineer specializing in Generative AI, NLP, and sustainable analytics.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p8f8Hpn6VQ0s5momkGumZ5qX6Ch12HaxDTXhMHDL/95B2S/bR5CV2wE8p4nXl16rYPD6/COM24kTx5I9Hw3NEA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="experience.html" target="_blank">Experience</a>
-        <a href="skills.html" target="_blank">Skills</a>
-        <a href="projects.html" target="_blank">Projects</a>
-        <a href="education.html" target="_blank">Education</a>
-        <a href="#recommendations">Recommendations</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-
-    <header>
-        <h1>Nihar Shiva Kumar</h1>
-        <p>ML Engineer | Data Scientist | Generative AI & NLP Specialist | Cloud-AI Architect</p>
-        <p><a href="mailto:shivakumarnihar@gmail.com">shivakumarnihar@gmail.com</a> | <a href="https://www.linkedin.com/in/nihar-shiva-kumar" target="_blank">LinkedIn</a> | <a href="https://github.com/Nih4rS" target="_blank">GitHub</a></p>
+    <header class="site-header">
+        <nav class="nav container" aria-label="Primary">
+            <a class="brand" href="index.html">NSK</a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links" id="primary-navigation">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#recommendations">Praise</a>
+                <a href="#contact">Contact</a>
+                <a href="experience.html">Full CV</a>
+            </div>
+        </nav>
     </header>
 
-    <section id="about">
-        <h2>🔥 Hey there, I'm Nihar Shiva Kumar!</h2>
-        <p>🚀 Passionate about AI, Machine Learning, and Generative AI — I apply advanced techniques to real-world challenges. With a background in Electrical Engineering and Data Science, I build LLMs, NLP systems, and scalable cloud pipelines for impactful applications. Interests: Chess ♟️, Piano 🎹, Hiking 🥾.</p>
-    </section>
+    <main>
+        <section class="hero" id="home">
+            <div class="container hero-content">
+                <div>
+                    <p class="eyebrow">Data Science &middot; LLMOps &middot; Product Strategy</p>
+                    <h1>Nihar Shiva Kumar</h1>
+                    <p class="lead">Data Scientist and Machine Learning Engineer crafting NLP, LLM, and analytics systems that turn complex data into decisions for product, manufacturing, and sustainability teams.</p>
+                    <p class="meta">Richardson, Texas &middot; Remote-friendly &middot; Open to Business Analyst, Data Scientist, Data Analyst, AI Engineer, and Machine Learning Engineer roles</p>
+                    <div class="hero-tags">
+                        <span class="chip">Generative AI & RAG</span>
+                        <span class="chip">Product & Growth Analytics</span>
+                        <span class="chip">Renewable & Power Systems</span>
+                    </div>
+                    <div class="hero-cta">
+                        <a class="btn" href="mailto:shivakumarnihar@gmail.com">Email Nihar</a>
+                        <a class="btn btn-secondary" href="https://www.linkedin.com/in/nihar-shiva-kumar" target="_blank" rel="noopener">LinkedIn</a>
+                        <a class="text-link" href="#projects">Explore work â†'</a>
+                    </div>
+                </div>
+                <div class="hero-panel">
+                    <p class="panel-heading">Currently</p>
+                    <ul>
+                        <li><strong>Data Science Analyst, Ropix Inc</strong> &middot; Apr 2025 â&euro;" Present &middot; Remote</li>
+                        <li><strong>UT Dallas</strong> &middot; MS Business Analytics, Data Science Track &middot; GPA 3.873</li>
+                        <li>341+ meaningful professional connections</li>
+                    </ul>
+                    <p class="panel-heading">Focus areas</p>
+                    <ul>
+                        <li>Retrieval-Augmented Generation and multi-agent copilots</li>
+                        <li>Product analytics & experimentation with SQL, Python, and BI</li>
+                        <li>LLM evaluation, automation, and deployment best practices</li>
+                        <li>AI for renewable energy, EV charging, and power electronics</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <ul>
-            <li><strong>Data Scientist, CrowdDoing</strong> (2024–2025): Web scraping, NLP, sentiment analysis, Power BI dashboards. +25% faster decisions, +15% revenue impact.</li>
-            <li><strong>Data Analyst Intern (MLOps), Viatris</strong> (2024): Built NLP pipelines, clustering (HDBSCAN), Azure VectorDB, time-series (LSTM), Power BI reporting.</li>
-            <li><strong>Engineer Intern, Microchip</strong> (2021–2022): MATLAB analysis on SiC modules, RMA root cause resolution (90%), Altium migration, and PCB automation projects.</li>
-        </ul>
-    </section>
+        <section class="stat-section">
+            <div class="container stat-grid">
+                <article class="stat-card">
+                    <span class="eyebrow">CrowdDoing</span>
+                    <h3>100K+ reviews</h3>
+                    <p>Web-scraped and segmented with NLP to reduce churn by 10% and lift revenue by 15%.</p>
+                </article>
+                <article class="stat-card">
+                    <span class="eyebrow">Manufacturing MLOps</span>
+                    <h3>500K+ reports</h3>
+                    <p>Automated ETL, HDBSCAN, and t-SNE clustering with 95% accuracy to slash manual labeling.</p>
+                </article>
+                <article class="stat-card">
+                    <span class="eyebrow">Semantic search</span>
+                    <h3>30% lift</h3>
+                    <p>BART summaries + Azure Vector DB accelerated investigation closures and knowledge reuse.</p>
+                </article>
+                <article class="stat-card">
+                    <span class="eyebrow">American Express</span>
+                    <h3>$373M impact</h3>
+                    <p>XGBoost & neural nets informed default thresholds across 450K customers and 189 features.</p>
+                </article>
+            </div>
+        </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <p><strong>ML & AI</strong>: XGBoost, SVM, LSTM, Transformers, CNNs, kNN, HDBSCAN</p>
-        <p><strong>Generative AI & LLMs</strong>: GPT-4, FLAN-T5, DistilBERT, Mixtral, Gemma, RAG, LangChain</p>
-        <p><strong>Big Data</strong>: Spark, Hadoop, Hive, Scala</p>
-        <p><strong>Cloud</strong>: AWS (SageMaker, Lambda, Redshift), GCP, Azure (AAS, VectorDB)</p>
-        <p><strong>Data Tools</strong>: Python, SQL, Power BI, Tableau, Jupyter, Alteryx, MATLAB</p>
-        <p><strong>Certifications</strong>: AWS Certified Cloud Practitioner, UTD Applied Machine Learning, DeepLearning.ai LLMOps</p>
-    </section>
+        <section id="about">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">About</p>
+                    <h2>Driving AI solutions that balance innovation, rigor, and impact</h2>
+                </div>
+                <div class="grid two">
+                    <article class="card">
+                        <p>I merge an engineering foundation with product empathy to deliver analytics and AI that unlock strategic decisions. From power electronics labs to multi-cloud data platforms, I obsess over pairing the right models, metrics, and narratives so teams can move faster with confidence.</p>
+                        <p>My projects span advanced LLMOps workflows, semantic search, manufacturing intelligence, and EV charging optimization. I love building with cross-functional partners, mentoring peers, and documenting playbooks that make complex AI approachable.</p>
+                    </article>
+                    <article class="card">
+                        <h3>What guides my work</h3>
+                        <ul class="list-dense">
+                            <li>Scientific thinking grounded in mathematics, statistics, and experimentation</li>
+                            <li>Human-centered product intuition informed by market research and storytelling</li>
+                            <li>Systems view across hardware, cloud, and data infrastructure</li>
+                            <li>A commitment to sustainability and responsible innovation</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>🎯 <strong>Tweet Emotion Detection</strong> – LSTM with Hugging Face; high F1-macro.</li>
-            <li>📊 <strong>Credit Risk Prediction</strong> – XGBoost on Amex data, 93.5% F1.</li>
-            <li>💡 <strong>Smart Energy (AWS)</strong> – EV charging optimizer using serverless stack.</li>
-            <li>🧠 <strong>LLM Fine-tuning</strong> – DistilBERT, Gemma, FLAN-T5 with LoRA, QLoRA, IA3.</li>
-            <li>📈 <strong>Airbnb Pricing Optimization</strong> – XGBoost + SHAP for price drivers.</li>
-        </ul>
-    </section>
+        <section id="skills">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Expertise</p>
+                    <h2>Full-stack data leadership: from modeling to storytelling</h2>
+                </div>
+                <div class="grid four">
+                    <article class="card">
+                        <h3>Statistical Modeling & Analytics</h3>
+                        <ul class="list-dense">
+                            <li>Logistic & linear regression, ANOVA, z/t/F testing</li>
+                            <li>PCA, Lasso, Ridge, feature selection best practices</li>
+                            <li>Forecasting and ARIMA-based time-series modeling</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <h3>Machine Learning & AI Delivery</h3>
+                        <ul class="list-dense">
+                            <li>Ensembles: XGBoost, Random Forest, Gradient Boosting</li>
+                            <li>LSTM, CNNs, transformer fine-tuning across PyTorch & TensorFlow</li>
+                            <li>Clustering (k-means, HDBSCAN, kNN) and decision intelligence</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <h3>Generative AI & NLP</h3>
+                        <ul class="list-dense">
+                            <li>LLMOps, PEFT (LoRA, QLoRA, IA3), prompt safety, evaluation</li>
+                            <li>RAG architectures with LangChain, Bedrock APIs, Azure Vector DB</li>
+                            <li>Semantic search, summarization, and automation pipelines</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <h3>Cloud, Data & Visualization</h3>
+                        <ul class="list-dense">
+                            <li>Python, R, SQL, C; pandas, NumPy, scikit-learn</li>
+                            <li>AWS (SageMaker, Redshift, Athena, Quicksight, Kinesis), Azure AAS</li>
+                            <li>Power BI, Tableau, Advanced Excel, Jupyter, R Studio</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <p><strong>MS – Business Analytics</strong>, UT Dallas (2024) | GPA: 3.87</p>
-        <p><strong>MTech – Power Electronics & Drives</strong>, Manipal Institute of Technology (2021)</p>
-        <p><strong>BTech – Electrical & Electronics</strong>, BMS College of Engineering (2019)</p>
-        <p><em>Finalist: UTA Data Competition, Adobe Analytics Challenge, Alteryx Datathon</em></p>
-    </section>
+        <section id="experience">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Experience</p>
+                    <h2>Hands-on leadership across data science, NLP, and hardware analytics</h2>
+                </div>
+                <div class="grid two">
+                    <article class="card experience-card">
+                        <h3>Ropix Inc &middot; Data Science Analyst</h3>
+                        <p class="meta">Apr 2025 â&euro;" Present &middot; United States (Remote)</p>
+                        <ul>
+                            <li>Advance experimentation strategy for AI features, fusing business hypotheses with ML telemetry.</li>
+                            <li>Prototype product intelligence workbenches that align KPI narratives with customer voice.</li>
+                            <li>Champion Generative AI adoption and coach teams on translating insights into decisions.</li>
+                        </ul>
+                    </article>
+                    <article class="card experience-card">
+                        <h3>CrowdDoing &middot; Data Scientist, Business Strategy</h3>
+                        <p class="meta">Sep 2024 â&euro;" May 2025 &middot; Dallas, TX &middot; Remote</p>
+                        <ul>
+                            <li>Engineered a web-scraping pipeline for 100K+ monthly reviews and NLP sentiment segmentation, cutting churn by 10% and boosting satisfaction by 20%.</li>
+                            <li>Led gap analyses that removed product inefficiencies and increased revenue by 15%.</li>
+                            <li>Built Power BI customer intelligence dashboards that accelerated data-backed decisions by 25%.</li>
+                        </ul>
+                    </article>
+                    <article class="card experience-card">
+                        <h3>Viatris &middot; Data Analyst Intern, Manufacturing MLOps</h3>
+                        <p class="meta">May 2024 â&euro;" Aug 2024 &middot; United States &middot; Remote</p>
+                        <ul>
+                            <li>Created Python ETL to transform 500K+ unstructured investigation reports; applied HDBSCAN + t-SNE, achieving 95% clustering accuracy and reducing manual labeling by 80%.</li>
+                            <li>Optimized a BART-based model for cluster summaries, improving semantic search accuracy by 30% for a 2M+ record corpus.</li>
+                            <li>Integrated Azure Vector DB, built Power BI dashboards on Azure AAS, and contributed to LSTM models that reduced manufacturing downtime by 4%.</li>
+                        </ul>
+                    </article>
+                    <article class="card experience-card">
+                        <h3>Microchip Technology Inc. &middot; Engineer Intern</h3>
+                        <p class="meta">Jul 2021 â&euro;" Jun 2022 &middot; Bengaluru, India &middot; On-site</p>
+                        <ul>
+                            <li>Analyzed 40K+ SiC test records in MATLAB, refining gate-driver profiles to cut voltage/current spikes by 15% and raise efficiency to 95%.</li>
+                            <li>Standardized PCB design data during DipTrace â†' Altium migration, reducing BOM mismatches and improving component alternatives.</li>
+                            <li>Resolved 90% of critical RMA flaws and institutionalized a repeatable data-collection workflow.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-    <section id="recommendations">
-        <h2>Recommendations</h2>
-        <p>Visit my <a href="https://www.linkedin.com/in/nihar-shiva-kumar/recommendations" target="_blank">LinkedIn recommendations</a> to see what mentors, peers, and collaborators say about working with me.</p>
-    </section>
+        <section id="projects">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Projects & Research</p>
+                    <h2>Selected work spanning finance, NLP, automation, and clean energy</h2>
+                </div>
+                <div class="grid two">
+                    <article class="card project-card">
+                        <h3>American Express Default Prediction</h3>
+                        <div class="tag-row">
+                            <span class="tag">XGBoost</span>
+                            <span class="tag">Neural Networks</span>
+                            <span class="tag">5M+ rows</span>
+                        </div>
+                        <p>Modeled delinquency risk across 450K customers and 189 variables, attaining 93.5% AUC and informing a $373M revenue lift through optimized default thresholds.</p>
+                        <a class="text-link" href="Projects/project1.html">View case study â†'</a>
+                    </article>
+                    <article class="card project-card">
+                        <h3>Tweet Emotion Detection & NLP Model Optimization</h3>
+                        <div class="tag-row">
+                            <span class="tag">LSTM</span>
+                            <span class="tag">Hugging Face</span>
+                            <span class="tag">Weights & Biases</span>
+                        </div>
+                        <p>Built LSTM classifiers with HuggingFace Trainer and fine-tuned DistilBERT, FLAN-T5, Mistral, and Gemma using PEFT (LoRA/QLoRA/IA3) to reach competitive macro-F1 on public benchmarks.</p>
+                    </article>
+                    <article class="card project-card">
+                        <h3>LLMOps & Semantic Knowledge Retrieval</h3>
+                        <div class="tag-row">
+                            <span class="tag">BART</span>
+                            <span class="tag">Azure Vector DB</span>
+                            <span class="tag">LangChain</span>
+                        </div>
+                        <p>Designed an end-to-end stack with Kubeflow pipelines, embeddings (MiniLM/mpnet), and Bedrock-style SDKs to automate summarization, search, and safety monitoring for regulated text pipelines.</p>
+                    </article>
+                    <article class="card project-card">
+                        <h3>Cloud & Sustainable Systems</h3>
+                        <div class="tag-row">
+                            <span class="tag">AWS IoT</span>
+                            <span class="tag">LSTM</span>
+                            <span class="tag">Energy Analytics</span>
+                        </div>
+                        <p>Architected AWS-based EV charging optimization (Lambda, DynamoDB, SageMaker) and built algorithmic trading ETL flows with REST APIs and LSTM forecasters for real-time decisioning.</p>
+                        <a class="text-link" href="Projects/project2.html">Dive deeper â†'</a>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:shivakumarnihar@gmail.com">shivakumarnihar@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/nihar-shiva-kumar" target="_blank">linkedin.com/in/nihar-shiva-kumar</a></p>
-        <p>GitHub: <a href="https://github.com/Nih4rS" target="_blank">github.com/Nih4rS</a></p>
-    </section>
+        <section id="education">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Education & Leadership</p>
+                    <h2>Bridging analytics, power electronics, and community impact</h2>
+                </div>
+                <div class="grid three">
+                    <article class="card education-card">
+                        <h3>MS, Business Analytics (Data Science)</h3>
+                        <p class="meta">The University of Texas at Dallas &middot; 2022 â&euro;" 2024 &middot; GPA 3.873/4.0</p>
+                        <ul class="list-dense">
+                            <li>Data Science Club & Chess Club leader; active volunteer.</li>
+                            <li>Datathon Alteryx finalist (Disney), UTA Data Analysis finalist, Adobe Analytics Challenge with GM.</li>
+                            <li>Projects: Tweet emotion detection, transformer fine-tuning, algorithmic trading ETL, Amex credit risk, AWS smart energy, Airbnb pricing strategy.</li>
+                        </ul>
+                    </article>
+                    <article class="card education-card">
+                        <h3>MTech, Power Electronics & Drives</h3>
+                        <p class="meta">Manipal Institute of Technology &middot; 2019 â&euro;" 2021 &middot; GPA 8.88/10</p>
+                        <ul class="list-dense">
+                            <li>Neural-network fuzzy control for converters, solar MPPT (8051), ARM-based buck-boost controllers.</li>
+                            <li>Advanced drive controls: scalar & vector methods, direct torque control for AC drives validated in MATLAB and lab hardware.</li>
+                        </ul>
+                    </article>
+                                        <article class="card education-card">
+                        <h3>BE, Electrical & Electronics</h3>
+                        <p class="meta">B.M.S. College of Engineering &middot; 2015 &ndash; 2019 &middot; GPA 8.62/10</p>
+                        <ul class="list-dense">
+                            <li>Activities & societies: Organized the PhaseShift treasure hunt and ML workshop, ranked 3rd at the ABB Make-a-thon 2016, and advanced to the IIT Bombay e-Yantra robotics semifinals.</li>
+                            <li>Projects: Two-way Arduino person counter with smart lighting and face-detection SMS alerts; laser-assisted 3D scanning pipeline using MATLAB/OpenCV; speaker recognition platform; quadratic buck converter prototype; home-security automation with night vision.</li>
+                            <li>Core strengths: Macro modeling, C/C++, MATLAB, Python, Excel, operations research, analytical problem solving, and multi-tasking.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Certifications & Spotlights</p>
+                    <h2>Always learning, always sharing</h2>
+                </div>
+                <div class="grid three">
+                    <article class="card">
+                        <h3>Latest Certifications</h3>
+                        <ul class="list-dense">
+                            <li>Data-Driven Product Management &middot; LinkedIn Learning (Apr 2025)</li>
+                            <li>Multi AI Agent Systems with crewAI &middot; DeepLearning.AI (Jan 2025)</li>
+                            <li>LLMOps &middot; DeepLearning.AI</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <h3>Competitions & Honors</h3>
+                        <ul class="list-dense">
+                            <li>Finalist &middot; Datathon Alteryx (Disney) & UTA Data Analysis</li>
+                            <li>Adobe Analytics Challenge &middot; Partnered with General Motors</li>
+                            <li>Community builder â&euro;&cent; GitHub + 341 LinkedIn followers</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <h3>Top Skills</h3>
+                        <ul class="list-dense">
+                            <li>Tableau &middot; Power BI &middot; SQL &middot; Python &middot; R &middot; MATLAB</li>
+                            <li>Generative AI &middot; CrewAI &middot; LangChain &middot; Bedrock APIs</li>
+                            <li>Business storytelling, product strategy, stakeholder enablement</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="recommendations">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Recommendations</p>
+                    <h2>Leaders describe working with me as proactive, curious, and dependable</h2>
+                </div>
+                <div class="recommendations">
+                    <article class="recommendation">
+                        <p>"Nihar streamlined NLP workflows, implemented semantic analytics, and automated preprocessing with enthusiasm and precision. He adapts quickly to new tools and collaborates with professionalism."</p>
+                        <span>â&euro;" Saurabh Bhogale &middot; Statistician & Viatris mentor</span>
+                    </article>
+                    <article class="recommendation">
+                        <p>"A bright and enterprising engineer who actively sought projects, mastered new skills rapidly, and delivered meticulous reports. His initiative allowed our team to accomplish more within his internship."</p>
+                        <span>â&euro;" Nitesh Satheesh &middot; Senior Manager, Microchip Technology</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <article class="card contact-card">
+                    <p class="eyebrow">Letâ&euro;&trade;s build whatâ&euro;&trade;s next</p>
+                    <h2>Ready to support teams driving data-backed strategy, AI platforms, and sustainable innovation.</h2>
+                    <p>Reach out if you're exploring Data Scientist, AI Engineer, Business Analyst, or product-focused analytics roles. I'm excited to collaborate with innovators across AI, data science, and renewable energy.</p>
+                    <div class="contact-links">
+                        <a class="btn" href="mailto:shivakumarnihar@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+                        <a class="btn btn-secondary" href="https://www.linkedin.com/in/nihar-shiva-kumar" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                        <a class="btn btn-secondary" href="https://github.com/Nih4rS" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>© 2025 Nihar Shiva Kumar. All rights reserved.</p>
+        <p>&copy; <span data-year>2025</span> Nihar Shiva Kumar &middot; Data Scientist & Machine Learning Engineer</p>
     </footer>
 </body>
 </html>
+

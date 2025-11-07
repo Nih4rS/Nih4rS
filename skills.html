@@ -1,77 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Skills — Nihar Shiva Kumar</title>
-  <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;background:#f7f8fc;color:#222;margin:0}
-    header,section{max-width:960px;margin:auto;padding:2rem 1.25rem}
-    h1{text-align:center;color:#2b2d42}
-    h2{color:#e63946;margin-top:1.2rem}
-    ul{margin-left:1rem}
-    li{margin-bottom:.45rem}
-    .note{color:#566072}
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills &middot; Nihar Shiva Kumar</title>
+  <meta name="description" content="Skill inventory for Nihar Shiva Kumar covering analytics, machine learning, generative AI, cloud, visualization, and product strategy.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
-    <h1>Skills</h1>
-    <p class="note">End-to-end delivery: data, modeling, deployment, and impact.</p>
+  <header class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Skills</p>
+      <h1>End-to-end craftsmanship across analytics, AI, and storytelling</h1>
+      <p class="lead">From statistical modeling to multi-agent LLMs, I bridge deep technical skills with product intuition.</p>
+      <div class="hero-cta">
+        <a class="btn" href="index.html#skills">Back to home</a>
+        <a class="btn btn-secondary" href="#generative">Jump to Generative AI</a>
+      </div>
+    </div>
   </header>
 
-  <section>
-    <h2>Statistical Modeling & Analytics</h2>
-    <ul>
-      <li>Regression (linear, logistic), ANOVA, hypothesis testing (z, t, F)</li>
-      <li>Feature selection: PCA, Lasso, Ridge</li>
-      <li>Time-series: ARIMA; forecasting workflows</li>
-    </ul>
+  <main class="page">
+    <article class="card" id="analytics">
+      <h2>Statistical Modeling & Analytics</h2>
+      <ul class="list-dense">
+        <li>Logistic/linear regression, ANOVA, hypothesis testing (z/t/F)</li>
+        <li>Predictive modeling with Decision Trees, SVMs, ensembles</li>
+        <li>Feature engineering & selection (PCA, Lasso, Ridge)</li>
+        <li>Time-series analysis, ARIMA, forecasting and experimentation</li>
+      </ul>
+    </article>
 
-    <h2>Machine Learning & AI</h2>
-    <ul>
-      <li>Ensembles: XGBoost, Random Forest, GBM</li>
-      <li>Deep learning: PyTorch, TensorFlow, Keras</li>
-      <li>Clustering: k-means, HDBSCAN, kNN</li>
-    </ul>
+    <article class="card" id="ml">
+      <h2>Machine Learning & AI Delivery</h2>
+      <ul class="list-dense">
+        <li>Deep learning with PyTorch, TensorFlow, Keras; CNN, LSTM, transformer stacks</li>
+        <li>Clustering and similarity modeling: k-means, HDBSCAN, kNN, t-SNE</li>
+        <li>Model governance: evaluation, MLOps, deployment playbooks, CI/CD</li>
+        <li>Decision intelligence and BI storytelling for executives</li>
+      </ul>
+    </article>
 
-    <h2>Generative AI & NLP</h2>
-    <ul>
-      <li>LLM fine-tuning with PEFT (LoRA, QLoRA, IA3) and evaluation</li>
-      <li>RAG systems, domain-specific knowledge retrieval, Q&A</li>
-      <li>LangChain and Bedrock-style SDK patterns for generation and summarization</li>
-    </ul>
+    <article class="card" id="generative">
+      <h2>Generative AI & NLP</h2>
+      <ul class="list-dense">
+        <li>LLMOps, Retrieval-Augmented Generation, LangChain, Bedrock-style SDKs</li>
+        <li>PEFT techniques (LoRA, QLoRA, IA3), crewAI multi-agent orchestration</li>
+        <li>BART summarization, semantic search, embeddings (MiniLM, mpnet)</li>
+        <li>Prompt engineering, safety guardrails, evaluation frameworks</li>
+      </ul>
+    </article>
 
-    <h2>Programming & Data</h2>
-    <ul>
-      <li>Languages: Python, SQL, R, C</li>
-      <li>Libraries: pandas, NumPy, Matplotlib, scikit-learn</li>
-      <li>Data tools: RStudio, Advanced Excel</li>
-    </ul>
+    <article class="card" id="data">
+      <h2>Programming, Data, & Cloud</h2>
+      <ul class="list-dense">
+        <li>Languages: Python, SQL, R, C, MATLAB</li>
+        <li>Libraries: pandas, NumPy, scikit-learn, Hugging Face, spaCy</li>
+        <li>Cloud: AWS (SageMaker, Redshift, Athena, Quicksight, Kinesis), Azure (AAS, Vector DB)</li>
+        <li>Data tooling: Power BI, Tableau, R Studio, Advanced Excel, Jupyter</li>
+      </ul>
+    </article>
 
-    <h2>Cloud & MLOps</h2>
-    <ul>
-      <li>AWS: Redshift, Athena, SageMaker, Quicksight, Kinesis Firehose, IoT</li>
-      <li>CI/CD and deployment patterns; containerization</li>
-    </ul>
+    <article class="card" id="product">
+      <h2>Product, Strategy & Sustainability</h2>
+      <ul class="list-dense">
+        <li>Experiment design, KPI architecture, stakeholder workshops</li>
+        <li>Product analytics and GTM enablement for AI launches</li>
+        <li>AI for renewable energy, EV charging, and power electronics</li>
+        <li>Community leadership: mentoring, volunteering, club leadership</li>
+      </ul>
+    </article>
+  </main>
 
-    <h2>Visualization</h2>
-    <ul>
-      <li>Tableau, Power BI; narrative dashboards for decisions</li>
-    </ul>
-
-    <h2>Product, Energy, and Domain</h2>
-    <ul>
-      <li>Product analysis and GTM insights</li>
-      <li>Renewable energy interests: EV charging, DC-DC converters, smart energy</li>
-    </ul>
-
-    <h2>Certifications</h2>
-    <ul>
-      <li>LLMOps (DeepLearning.AI)</li>
-      <li>Multi-Agent Systems with crewAI (DeepLearning.AI)</li>
-      <li>Data-Driven Product Management (LinkedIn)</li>
-    </ul>
-  </section>
+  <footer class="page-footer">
+    <p>Letâ&euro;&trade;s pair these skills with your toughest challenge. <a href="mailto:shivakumarnihar@gmail.com">Reach out</a>.</p>
+  </footer>
 </body>
 </html>
+

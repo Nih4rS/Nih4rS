@@ -2,66 +2,74 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Project Report - Project 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Study &middot; American Express Default Prediction</title>
+  <meta name="description" content="How Nihar Shiva Kumar built an American Express default prediction engine with XGBoost and neural networks.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="../style.css">
+  <script defer src="../script.js"></script>
 </head>
 <body>
-  <header>
-    <h1>📌 Project Title</h1>
-    <p><em>Brief Description or Subtitle of Project</em></p>
+  <header class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Case Study</p>
+      <h1>American Express Default Prediction</h1>
+      <p class="lead">Building an interpretable ML engine that informed lending strategy across millions of cardholders.</p>
+      <div class="hero-cta">
+        <a class="btn" href="../index.html#projects">Back to portfolio</a>
+        <a class="btn btn-secondary" href="project2.html">Next project</a>
+      </div>
+    </div>
   </header>
 
-  <section>
-    <h2>📝 Overview</h2>
-    <p>
-      Clearly summarize what this project is about, goals achieved, and key highlights.
-    </p>
-  </section>
+  <main class="page">
+    <article class="card">
+      <h2>Overview</h2>
+      <p>American Express provided an anonymized dataset covering 5M+ rows, 189 attributes, and 450K customers. The objective was to predict default risk and recommend threshold strategies that preserve growth while minimizing losses.</p>
+      <ul class="list-dense">
+        <li><strong>Goal:</strong> Deliver a high-precision model that surfaces actionable drivers and revenue impacts.</li>
+        <li><strong>Role:</strong> Lead data scientist overseeing feature design, modeling, validation, and stakeholder storytelling.</li>
+        <li><strong>Impact:</strong> 93.5% AUC, $373M projected revenue lift through smarter default thresholds.</li>
+      </ul>
+    </article>
 
-  <section>
-    <h2>🛠️ Technologies Used</h2>
-    <ul>
-      <li>Python</li>
-      <li>TensorFlow</li>
-      <li>HTML, CSS, JavaScript</li>
-      <!-- Add more as required -->
-    </ul>
-  </section>
+    <article class="card">
+      <h2>Data Strategy</h2>
+      <ul class="list-dense">
+        <li>Built feature marts covering spending velocity, delinquency windows, utilization ratios, payment streaks, and macrotrends.</li>
+        <li>Applied PCA + VIF checks to combat multicollinearity and reduce noise while maintaining explainability.</li>
+        <li>Balanced the dataset through stratified sampling and cost-sensitive training to reflect business risk appetite.</li>
+      </ul>
+    </article>
 
-  <section>
-    <h2>🚧 Project Structure</h2>
-    <pre>
-project1/
-├── data/
-├── src/
-│   ├── main.py
-│   └── utils.py
-└── README.md
-    </pre>
-  </section>
+    <article class="card">
+      <h2>Modeling & Evaluation</h2>
+      <ul class="list-dense">
+        <li>Benchmarked XGBoost, LightGBM, and fully connected neural networks with Bayesian hyperparameter tuning.</li>
+        <li>Created stacked ensembles that combined gradient boosting with calibrated probability outputs.</li>
+        <li>Implemented SHAP, LIME, and cumulative gains charts to translate model decisions to finance and compliance partners.</li>
+      </ul>
+    </article>
 
-  <section>
-    <h2>📈 Results & Outcomes</h2>
-    <p>Explain results, showcase graphs, charts, or screenshots.</p>
-    <img src="../assets/images/result.png" alt="Project Result Screenshot" width="500">
-  </section>
+    <article class="card">
+      <h2>Business Enablement</h2>
+      <ul class="list-dense">
+        <li>Paired risk tiers with macro-level simulators that quantified revenue impact at different threshold settings.</li>
+        <li>Delivered dashboards summarizing top drivers (spend volatility, payment history, balance ratios) and recommended interventions.</li>
+        <li>Documented MLOps considerations: retraining cadence, drift detection, and governance checkpoints.</li>
+      </ul>
+    </article>
 
-  <section>
-    <h2>🚀 Interactive Demo (optional)</h2>
-    <p>
-      <a href="https://colab.research.google.com/">Google Colab Notebook</a> or  
-      <a href="https://huggingface.co/spaces">HuggingFace Space</a>
-    </p>
-  </section>
+    <article class="card">
+      <h2>Tech Stack</h2>
+      <p>Python, pandas, scikit-learn, XGBoost, TensorFlow, Optuna, SHAP, Power BI.</p>
+    </article>
+  </main>
 
-  <section>
-    <h2>🔗 Source Code & References</h2>
-    <p><a href="https://github.com/Nih4rS/Project-1">View Code on GitHub</a></p>
-  </section>
-
-  <footer>
-    <a href="../index.html">🏠 Back to Home</a>
+  <footer class="page-footer">
+    <p>Questions about the pipeline&copy; <a href="mailto:shivakumarnihar@gmail.com">Letâ&euro;&trade;s talk</a>.</p>
   </footer>
-
 </body>
 </html>
+

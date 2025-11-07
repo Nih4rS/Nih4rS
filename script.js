@@ -1,15 +1,25 @@
-document.addEventListener("DOMContentLoaded", function() {
-  const heading = document.querySelector('h1');
-  heading.addEventListener('click', () => {
-    alert('Hello! Welcome to my portfolio.');
-  });
-});
+document.addEventListener('DOMContentLoaded', () => {
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
 
-function loadSection(section) {
-  fetch(`${section}/index.html`)
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('main-content').innerHTML = data;
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('is-open');
+      navToggle.setAttribute('aria-expanded', isOpen);
     });
-}
 
+    navLinks.querySelectorAll('a[href^="#"]').forEach((link) => {
+      link.addEventListener('click', () => {
+        if (navLinks.classList.contains('is-open')) {
+          navLinks.classList.remove('is-open');
+          navToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  }
+
+  const yearTarget = document.querySelector('[data-year]');
+  if (yearTarget) {
+    yearTarget.textContent = new Date().getFullYear();
+  }
+});

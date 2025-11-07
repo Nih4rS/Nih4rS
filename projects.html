@@ -1,70 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects - Nihar Shiva Kumar</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f8f9fa;
-            color: #1d1e2c;
-            padding: 2rem;
-            max-width: 1000px;
-            margin: auto;
-        }
-        h1 {
-            color: #2b2d42;
-            border-bottom: 3px solid #ef233c;
-            padding-bottom: 0.5rem;
-        }
-        h2 {
-            color: #ef233c;
-            margin-top: 2rem;
-        }
-        ul {
-            padding-left: 1.5rem;
-        }
-        li {
-            margin-bottom: 0.8rem;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects &middot; Nihar Shiva Kumar</title>
+    <meta name="description" content="Highlighted projects by Nihar Shiva Kumar covering ML, NLP, LLMOps, analytics, and sustainable systems.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <h1>Projects</h1>
+    <header class="page-hero">
+        <div class="container">
+            <p class="eyebrow">Project Portfolio</p>
+            <h1>Proof that data science, NLP, and systems thinking drive measurable change</h1>
+            <p class="lead">Every build pairs technical rigor with stakeholder storytelling so insights become action.</p>
+            <div class="hero-cta">
+                <a class="btn" href="index.html#projects">Back to featured section</a>
+                <a class="btn btn-secondary" href="Projects/project1.html">Case study &middot; Amex</a>
+            </div>
+        </div>
+    </header>
 
-    <h2>ML & AI Projects</h2>
-    <ul>
-        <li>Credit Risk Analysis: Applied XGBoost and neural networks on Amex data (F1: 93.5%).</li>
-        <li>Airbnb Pricing Optimization: Used XGBoost + SHAP for price driver insights in San Diego.</li>
-        <li>Algorithmic Trading: Built real-time ETL + LSTM models for price prediction from REST API.</li>
-    </ul>
+    <main class="page">
+        <article class="card project-card">
+            <h3>American Express Default Prediction</h3>
+            <div class="tag-row">
+                <span class="tag">XGBoost</span>
+                <span class="tag">Neural Networks</span>
+                <span class="tag">Risk Modeling</span>
+            </div>
+            <p>Processed 5M+ records across 189 features for 450K customers. Built feature stores, trained XGBoost and neural networks, and delivered SHAP-backed narratives that guided a $373M revenue impact through smarter default thresholds.</p>
+            <a class="text-link" href="Projects/project1.html">View detailed report â†'</a>
+        </article>
 
-    <h2>Generative AI & NLP</h2>
-    <ul>
-        <li>Tweet Emotion Detection: LSTM + Hugging Face Trainer to classify tweet sentiments.</li>
-        <li>LLM Fine-tuning: DistilBERT, FLAN-T5, Mistral, Gemma using LoRA, QLoRA, IA3 with PEFT.</li>
-        <li>BART summarization with semantic search via Azure VectorDB + MiniLM embeddings.</li>
-    </ul>
+        <article class="card project-card">
+            <h3>Tweet Emotion Detection & Transformer Optimization</h3>
+            <div class="tag-row">
+                <span class="tag">LSTM</span>
+                <span class="tag">DistilBERT</span>
+                <span class="tag">FLAN-T5</span>
+            </div>
+            <p>Built LSTM classifiers in Hugging Face Trainer and fine-tuned DistilBERT, FLAN-T5, Mistral, and Gemma using LoRA, QLoRA, and IA3 techniques. Logged experiments in Weights & Biases, compared macro-F1 scores, and shared reproducible notebooks for peers.</p>
+        </article>
 
-    <h2>Cloud & Smart Systems</h2>
-    <ul>
-        <li>Cloud-Based Smart Energy: AWS Lambda, DynamoDB for EV charging optimization.</li>
-        <li>Power BI dashboards: For manufacturing downtime reduction (Viatris MLOps team).</li>
-    </ul>
+        <article class="card project-card">
+            <h3>LLMOps + Semantic Knowledge Retrieval Fabric</h3>
+            <div class="tag-row">
+                <span class="tag">LangChain</span>
+                <span class="tag">Azure Vector DB</span>
+                <span class="tag">Kubeflow</span>
+            </div>
+            <p>Prototyped RAG pipelines with MiniLM/mpnet embeddings, BART summarization, and Bedrock-style SDKs. Automated ingestion, evaluation, and deployment flows through Kubeflow Pipelines, bringing 30% gains to semantic search accuracy for regulated text corpora.</p>
+        </article>
 
-    <h2>Embedded & IoT Projects</h2>
-    <ul>
-        <li>Quadratic Buck Converter: Designed & built a prototype; hardware-validated in 2019.</li>
-        <li>Solar MPPT: Implemented with 8051 microcontroller during MTech studies.</li>
-        <li>3D Object Scanner: Image processing using MATLAB and OpenCV.</li>
-    </ul>
+        <article class="card project-card">
+            <h3>Manufacturing NLP + BI Workbench</h3>
+            <div class="tag-row">
+                <span class="tag">Power BI</span>
+                <span class="tag">Azure AAS</span>
+                <span class="tag">LSTM</span>
+            </div>
+            <p>Created Power BI dashboards on Azure Analysis Services, connected to automated ETL (Python, Azure ML) that clustered 500K+ reports. Added LSTM time-series modeling for fluid bed dryer monitoring, reducing downtime by 4%.</p>
+        </article>
 
-    <h2>Academic Highlights</h2>
-    <ul>
-        <li>Adobe Analytics Challenge: Collaborated with GM on budget analysis and ad ROI.</li>
-        <li>UTA Data Competition Finalist: Optimized ad spend via multi-variable regression.</li>
-        <li>Alteryx Datathon: CbyC tax data trends analysis for The Walt Disney Company.</li>
-    </ul>
+        <article class="card project-card">
+            <h3>Smart Energy & EV Charging Intelligence</h3>
+            <div class="tag-row">
+                <span class="tag">AWS IoT</span>
+                <span class="tag">SageMaker</span>
+                <span class="tag">Optimization</span>
+            </div>
+            <p>Designed AWS Lambda, DynamoDB, and SageMaker workflows to orchestrate real-time EV charging, aligning energy dispatch with cost and sustainability targets. Documented architectures for utility partners.</p>
+        </article>
+
+        <article class="card project-card">
+            <h3>Algorithmic Trading & Real-time ETL</h3>
+            <div class="tag-row">
+                <span class="tag">REST API</span>
+                <span class="tag">Kafka</span>
+                <span class="tag">Time-series</span>
+            </div>
+            <p>Pulled streaming market data from REST endpoints, cleaned it via Python ETL, and trained LSTM-based forecasters with risk controls. Shared dashboards for day-to-day signal monitoring.</p>
+        </article>
+
+        <article class="card project-card">
+            <h3>Credit Risk & Financial Analytics</h3>
+            <div class="tag-row">
+                <span class="tag">scikit-learn</span>
+                <span class="tag">TensorFlow</span>
+                <span class="tag">Explainability</span>
+            </div>
+            <p>Built XGBoost and neural-network ensembles for credit risk scoring, tuned for F1 93.5%. Delivered interpretability artifacts (SHAP, PDPs) that aligned data science outputs with compliance and finance stakeholders.</p>
+        </article>
+
+        <article class="card project-card">
+            <h3>Renewable Energy & Power Electronics</h3>
+            <div class="tag-row">
+                <span class="tag">MATLAB</span>
+                <span class="tag">Embedded</span>
+                <span class="tag">Control Systems</span>
+            </div>
+            <p>Developed neural-network fuzzy controllers for converters, executed solar MPPT firmware on 8051, and implemented ARM-based buck-boost converters. Compared scalar/vector control strategies for synchronous motors with lab validation.</p>
+        </article>
+    </main>
+
+    <footer class="page-footer">
+        <p>Interested in the code or notebooks&copy; <a href="https://github.com/Nih4rS" target="_blank" rel="noopener">Browse GitHub</a> or <a href="mailto:shivakumarnihar@gmail.com">email me</a>.</p>
+    </footer>
 </body>
 </html>
+

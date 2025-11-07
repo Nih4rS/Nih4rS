@@ -3,48 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Education — Nihar Shiva Kumar</title>
-  <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;background:#f4f6fb;color:#23262f;margin:0}
-    main{max-width:960px;margin:auto;padding:2rem 1.25rem}
-    h1{color:#2b2d42}
-    .school{background:#fff;border:1px solid #e8eaf0;border-left:5px solid #e63946;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,.05);padding:1rem;margin:1rem 0}
-    .degree{font-weight:700}
-    .meta{font-size:.95rem;color:#576072}
-    ul{margin-top:.5rem;margin-left:1rem}
-  </style>
+  <title>Education &middot; Nihar Shiva Kumar</title>
+  <meta name="description" content="Education history for Nihar Shiva Kumar covering UT Dallas, Manipal Institute of Technology, and BMS College of Engineering.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <main>
-    <h1>Education</h1>
+  <header class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Education</p>
+      <h1>Learning at the intersection of analytics, AI, and power electronics</h1>
+      <p class="lead">Graduate and undergraduate experiences that fuel my obsession with data-driven sustainability and product innovation.</p>
+      <div class="hero-cta">
+        <a class="btn" href="index.html#education">Back to home</a>
+        <a class="btn btn-secondary" href="#utd">Jump to UT Dallas</a>
+      </div>
+    </div>
+  </header>
 
-    <article class="school">
-      <div class="degree">M.S., Business Analytics (Data Science Track) — The University of Texas at Dallas</div>
-      <div class="meta">Aug 2022 – May 2024 · GPA 3.873/4.00</div>
-      <ul>
-        <li>Activities: Data Science Club, Chess Club, volunteering.</li>
-        <li>Competitions: Alteryx Datathon (Disney), UTA Data Analysis finalist, Adobe Analytics Challenge with GM.</li>
-        <li>Selected work: Tweet Emotion Detection (LSTM, HF Trainer), Transformer fine-tuning (DistilBERT, FLAN-T5, Mistral, Gemma via LoRA/QLoRA/IA3, tracked in W&B), Algorithmic Trading ETL + LSTM, Credit Risk (XGBoost and NN), AWS smart-energy architecture, Airbnb pricing with XGBoost.</li>
+  <main class="page">
+    <article class="card education-card" id="utd">
+      <h3>MS, Business Analytics (Data Science Track)</h3>
+      <p class="meta">The University of Texas at Dallas &middot; Aug 2022 â&euro;" May 2024 &middot; GPA 3.873/4.0</p>
+      <ul class="list-dense">
+        <li>Explored applied machine learning, NLP, and product analytics while contributing to community initiatives via the Data Science Club and Chess Club.</li>
+        <li>Finalist: Datathon Alteryx (Disney) and UTA Data Analysis Competition; represented UT Dallas in the Adobe Analytics Challenge with General Motors.</li>
+        <li>Capstone & projects: Tweet emotion detection (LSTM), transformer fine-tuning with PEFT, algorithmic trading ETL + LSTM, Amex credit risk modeling, AWS smart energy, Airbnb pricing strategy.</li>
       </ul>
     </article>
 
-    <article class="school">
-      <div class="degree">M.Tech., Power Electronics & Drives — Manipal Institute of Technology</div>
-      <div class="meta">2019 – 2021 · GPA 8.88/10</div>
-      <ul>
-        <li>NN-fuzzy control for converters (MATLAB); 8051 solar MPPT; ARM-based buck-boost control.</li>
-        <li>Advanced motor-drive controls: scalar/vector for synchronous motors; DTC for AC drives with MATLAB validation.</li>
+    <article class="card education-card">
+      <h3>MTech, Power Electronics & Drives</h3>
+      <p class="meta">Manipal Institute of Technology &middot; 2019 â&euro;" 2021 &middot; GPA 8.88/10</p>
+      <ul class="list-dense">
+        <li>Researched neural-network-based fuzzy control for converters, solar MPPT on 8051, and ARM-powered buck-boost controllers.</li>
+        <li>Designed and simulated scalar/vector control strategies and direct torque control for AC drives, validating in MATLAB and lab hardware.</li>
+        <li>Published documentation that bridged power electronics with early explorations in machine learning.</li>
       </ul>
     </article>
 
-    <article class="school">
-      <div class="degree">B.E., Electrical & Electronics — BMS College of Engineering</div>
-      <div class="meta">2015 – 2019</div>
-      <ul>
-        <li>Awards: ABB Make-a-thon rank 3; e-Yantra Robotics semifinalist.</li>
-        <li>Projects: 3D object scanner (MATLAB), speaker recognition, home automation, quadratic buck converter.</li>
+        <article class="card education-card">
+      <h3>BE, Electrical & Electronics Engineering</h3>
+      <p class="meta">B.M.S. College of Engineering &middot; 2015 &ndash; 2019 &middot; GPA 8.62/10</p>
+      <ul class="list-dense">
+        <li>Activities & societies: Hosted the PhaseShift treasure hunt and ML workshop, earned 3rd place at the ABB Make-a-thon 2016, and represented BMSCE in the IIT Bombay e-Yantra robotics semifinals.</li>
+        <li>Projects: Two-way Arduino person counter with automated lighting and face-detection messaging, laser-guided 3D scanner (MATLAB/OpenCV), speaker recognition engine, quadratic buck converter hardware, and home-security automation with night vision alerts.</li>
+        <li>Skills focus: Macro modeling, Python, MATLAB, C/C++, Excel, operations research, analytical problem solving, and multi-tasking.</li>
       </ul>
     </article>
   </main>
+
+  <footer class="page-footer">
+    <p>Looking for transcripts or syllabi&copy; <a href="mailto:shivakumarnihar@gmail.com">Letâ&euro;&trade;s chat</a>.</p>
+  </footer>
 </body>
 </html>
+

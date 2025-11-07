@@ -1,59 +1,54 @@
-# 🔥 Hey there, I'm Nihar Shiva Kumar! 👋  
+# 🔥 Hey there, I'm Nihar Shiva Kumar! 👋
 
-🚀 **Machine Learning Engineer | Data Scientist | LLM & Generative AI Enthusiast**  
-
-I’m passionate about **Machine Learning, Data Science, and Generative AI**—exploring how AI can solve **real-world challenges** and unlock **new possibilities**.  
-I love working with **LLMs, NLP, and AI-driven automation**, constantly experimenting with the latest advancements in **AI and cloud computing**.  
-Intrests: Chess, Piano, hiking
----
-
-## 👨‍🎓 About Me 💡  
-
-🎓 **Master’s in Business Analytics (Data Science & Applied Machine Learning)** – University of Texas at Dallas  
-📊 **3+ years of experience** building & deploying **ML, NLP, and Deep Learning models**  
-🧠 Strong background in **LLM fine-tuning, Retrieval-Augmented Generation (RAG), and AI/ML-driven automation**  
+🚀 Machine Learning Engineer | Data Scientist | LLM & Generative AI Enthusiast  
+I’m passionate about building ML, NLP, and GenAI systems that solve real-world challenges and unlock new possibilities. Most days you’ll find me iterating on LLM fine-tuning workflows, shipping data products, or exploring how AI can advance sustainability. Outside of work: chess, piano, and long hikes.
 
 ---
 
-## 📚 Notable Courses & Certifications  
+## 👨‍🎓 About Me 💡
+- Master’s in Business Analytics (Data Science & Applied ML) – University of Texas at Dallas  
+- 3+ years delivering ML, NLP, and Deep Learning models from prototype to production  
+- Deep background in LLM fine-tuning, Retrieval-Augmented Generation (RAG), and AI-driven automation
 
-✅ **Applied Machine Learning Certification** – UT Dallas  
-✅ **AWS Certified Cloud Practitioner (CLF-C02)**  
-✅ **Knowledge Graphs for RAG**, LLMOps - deeplearning.ai
+## 📚 Notable Courses & Certifications
+- Applied Machine Learning Certification – UT Dallas  
+- AWS Certified Cloud Practitioner (CLF-C02)  
+- Knowledge Graphs for RAG, LLMOps – DeepLearning.AI  
+- Additional: Data-Driven Product Management, Multi AI Agent Systems with crewAI
 
----
+## 🛠️ Tech Stack & Skills
+### Machine Learning & AI
+- Supervised + Unsupervised Learning: Regression, SVM, Decision Trees, XGBoost, kNN  
+- Deep Learning: CNNs, RNNs, LSTMs, Transformers  
+- Generative AI & LLMs: GPT-4, Mixtral, FLAN-T5, DistilBERT, Gemma, LangChain, LlamaIndex, RAG  
+- Big Data & Distributed Computing: Spark, Hadoop, Hive, Scala  
+- Frameworks: TensorFlow, PyTorch, Keras, scikit-learn, pandas, NumPy
 
-## 🛠️ Tech Stack & Skills  
+### Programming & Cloud
+- Languages: Python, R, C++, SQL, NoSQL  
+- Cloud & Databases: AWS, GCP, Azure, MySQL, MongoDB  
+- DevOps & Version Control: GitHub, Git, MLOps/CI-CD best practices
 
-### 📌 **Machine Learning & AI**  
-✔️ **Supervised & Unsupervised Learning** – Regression, SVM, Decision Trees, XGBoost, kNN  
-✔️ **Deep Learning** – CNNs, RNNs, LSTMs, Transformers  
-✔️ **Generative AI & LLMs** – GPT-4, Mixtral, LangChain, RAG, LlamaIndex, FLAN-T5, DistilBERT, Gemma  
-✔️ **Big Data & Distributed Computing** – Spark, Hadoop, Hive, Scala  
-✔️ **ML Frameworks** – TensorFlow, PyTorch, Keras, Scikit-learn, NumPy, Pandas  
+### Data Science & Visualization
+- Tooling: Jupyter Notebook, Google Colab, R Studio, Alteryx, Advanced Excel  
+- Visualization: Tableau, Power BI, Matplotlib, Seaborn  
+- Strengths: Macro modeling, analytical storytelling, stakeholder enablement
 
-### 📌 **Programming & Cloud**  
-✔️ **Languages** – Python, R, C++, SQL, NoSQL  
-✔️ **Cloud & Databases** – AWS, GCP, MySQL, MongoDB  
-✔️ **DevOps & Version Control** – GitHub, Git  
+### Certifications & Additional Tools
+- AWS, Azure, Alteryx, Applied Machine Learning (UTD)  
+- Other tools: MS Office, Seeq, OSI Pi, MATLAB
 
-### 📌 **Data Science & Visualization**  
-✔️ **Data Tools** – Jupyter Notebook, Google Colab, R Studio, Alteryx  
-✔️ **Visualization** – Tableau, Power BI, Matplotlib, Seaborn  
+## 🧪 Highlight Projects
+- Two-way person counter with Arduino + smart room automation and face-detection messaging  
+- Laser-based 3D object scanner (MATLAB + OpenCV) with automated dimension extraction  
+- Speaker recognition platform for secure access  
+- Quadratic buck converter hardware prototype (senior design)  
+- Home security automation with night vision detection and alerting
 
-### 📌 **Certifications & Additional Tools**  
-✔️ **Certifications** – AWS, Azure, Alteryx, Applied Machine Learning (UTD)  
-✔️ **Other Tools** – MS Office, Seeq, OSI Pi, MATLAB  
+## 🌍 Let's Connect & Collaborate!
+Always up for new AI-driven projects, research breakthroughs, and collaborations in ML, NLP, and Generative AI. Let’s push boundaries together.
 
-
----
-
-## 🌍 **Let's Connect & Collaborate!**  
-
-Always eager to explore **new AI-driven projects, research breakthroughs, and collaborations** in **ML, NLP, and Generative AI**.  
-Feel free to **connect** and let's **push boundaries together!**   
-
-
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/nihar-shiva-kumar/)  
-[![GitHub](https://img.shields.io/badge/-GitHub-black?style=flat&logo=github)](https://github.com/Nih4rS)  
-[![🚀]](https://nih4rs.github.io/Nih4rS)
+- LinkedIn: [linkedin.com/in/nihar-shiva-kumar](https://www.linkedin.com/in/nihar-shiva-kumar)  
+- GitHub: [github.com/Nih4rS](https://github.com/Nih4rS)  
+- Portfolio: [nih4rs.github.io/Nih4rS](https://nih4rs.github.io/Nih4rS)  
+- Email: [shivakumarnihar@gmail.com](mailto:shivakumarnihar@gmail.com)
