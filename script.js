@@ -18,6 +18,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener('click', (event) => {
+      const targetId = link.getAttribute('href').substring(1);
+      if (!targetId) return;
+      const target = document.getElementById(targetId);
+      if (target) {
+        event.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
   const yearTarget = document.querySelector('[data-year]');
   if (yearTarget) {
     yearTarget.textContent = new Date().getFullYear();
