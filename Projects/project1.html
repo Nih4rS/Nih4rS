@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Case Study &middot; American Express Default Prediction</title>
+  <title>Case Study · American Express Default Prediction</title>
   <meta name="description" content="How Nihar Shiva Kumar built an American Express default prediction engine with XGBoost and neural networks.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,38 +26,37 @@
   <main class="page">
     <article class="card">
       <h2>Overview</h2>
-      <p>American Express provided an anonymized dataset covering 5M+ rows, 189 attributes, and 450K customers. The objective was to predict default risk and recommend threshold strategies that preserve growth while minimizing losses.</p>
+      <p>American Express provided an anonymized dataset covering 5M+ rows, 189 attributes, and 450K customers. Objective: predict default risk and recommend thresholds that balance growth and loss mitigation.</p>
       <ul class="list-dense">
-        <li><strong>Goal:</strong> Deliver a high-precision model that surfaces actionable drivers and revenue impacts.</li>
-        <li><strong>Role:</strong> Lead data scientist overseeing feature design, modeling, validation, and stakeholder storytelling.</li>
-        <li><strong>Impact:</strong> 93.5% AUC, $373M projected revenue lift through smarter default thresholds.</li>
+        <li><strong>Goal:</strong> Deliver a high-precision model with business-ready explainability.</li>
+        <li><strong>Impact:</strong> 93.5% AUC and $373M expected revenue lift via smarter default thresholds.</li>
       </ul>
     </article>
 
     <article class="card">
       <h2>Data Strategy</h2>
       <ul class="list-dense">
-        <li>Built feature marts covering spending velocity, delinquency windows, utilization ratios, payment streaks, and macrotrends.</li>
-        <li>Applied PCA + VIF checks to combat multicollinearity and reduce noise while maintaining explainability.</li>
-        <li>Balanced the dataset through stratified sampling and cost-sensitive training to reflect business risk appetite.</li>
+        <li>Crafted feature marts spanning spending velocity, delinquency windows, utilization ratios, payment streaks, and macro trends.</li>
+        <li>Applied PCA/VIF checks to mitigate multicollinearity without sacrificing interpretability.</li>
+        <li>Used stratified sampling and cost-sensitive training to mirror business risk tolerance.</li>
       </ul>
     </article>
 
     <article class="card">
       <h2>Modeling & Evaluation</h2>
       <ul class="list-dense">
-        <li>Benchmarked XGBoost, LightGBM, and fully connected neural networks with Bayesian hyperparameter tuning.</li>
-        <li>Created stacked ensembles that combined gradient boosting with calibrated probability outputs.</li>
-        <li>Implemented SHAP, LIME, and cumulative gains charts to translate model decisions to finance and compliance partners.</li>
+        <li>Benchmarked XGBoost, LightGBM, and fully connected neural nets with Bayesian hyper-parameter tuning.</li>
+        <li>Stacked ensembles combined gradient boosting with calibrated probability outputs.</li>
+        <li>Produced SHAP, LIME, and cumulative gains charts to translate model behavior to finance and compliance partners.</li>
       </ul>
     </article>
 
     <article class="card">
       <h2>Business Enablement</h2>
       <ul class="list-dense">
-        <li>Paired risk tiers with macro-level simulators that quantified revenue impact at different threshold settings.</li>
-        <li>Delivered dashboards summarizing top drivers (spend volatility, payment history, balance ratios) and recommended interventions.</li>
-        <li>Documented MLOps considerations: retraining cadence, drift detection, and governance checkpoints.</li>
+        <li>Paired risk tiers with interactive simulators quantifying revenue impact at different thresholds.</li>
+        <li>Delivered dashboards summarizing top drivers (spend volatility, payment history, utilization) plus recommended interventions.</li>
+        <li>Documented MLOps considerations covering retrain cadence, drift detection, and governance checkpoints.</li>
       </ul>
     </article>
 
@@ -68,8 +67,7 @@
   </main>
 
   <footer class="page-footer">
-    <p>Questions about the pipeline&copy; <a href="mailto:shivakumarnihar@gmail.com">Let's talk</a>.</p>
+    <p>Questions about the pipeline? <a href="mailto:shivakumarnihar@gmail.com">Let’s talk</a>.</p>
   </footer>
 </body>
 </html>
-
